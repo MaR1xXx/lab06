@@ -12,14 +12,14 @@
 если **commit** помечен тэгом, то необходимо собрать пакеты (`DEB, RPM, WIX, DragNDrop, ...`) </br>
 и разместить их на сервисе **GitHub**.
 
-1. Создаем файл `CMakeLists.txt` для создания пакетов с бинарным файлом solver: https://github.com/aakx000/lab06/blob/72023d5f8d4fed8b5276c12baac7a1dafa76fb44/CMakeLists.txt
+1. Создаем файл `CMakeLists.txt` для создания пакетов с бинарным файлом solver: https://github.com/MaR1xXx/lab06/blob/96e26a4dc8d97cbaabded33ff3bff5bb5611a008/CMakeLists.txt
  
-2. Создаем файл `CPack.cmake` - файл-скрипт, используемый для генерации пакетов из скомпилированной программы: https://github.com/aakx000/lab06/blob/72023d5f8d4fed8b5276c12baac7a1dafa76fb44/CPack.cmake
+2. Создаем файл `CPack.cmake` - файл-скрипт, используемый для генерации пакетов из скомпилированной программы: https://github.com/MaR1xXx/lab06/blob/96e26a4dc8d97cbaabded33ff3bff5bb5611a008/CPack.cmake
  
 3. Создаем директорию .github/workflows и два файла в нем: `CI.yml` для билдинга в Github Actions при каждом push или pull_request и `CI_release.yml` для билдинга при каждом push нового тэга. 
  
- - Файл `CI.yml`: https://github.com/aakx000/lab06/blob/72023d5f8d4fed8b5276c12baac7a1dafa76fb44/.github/workflows/CI.yml
- - Файл `CI_release.yml`: https://github.com/aakx000/lab06/blob/72023d5f8d4fed8b5276c12baac7a1dafa76fb44/.github/workflows/CI_release.yml
+ - Файл `CI.yml`: https://github.com/MaR1xXx/lab06/blob/96e26a4dc8d97cbaabded33ff3bff5bb5611a008/.github/workflows/CI.yml
+ - Файл `CI_release.yml`: https://github.com/MaR1xXx/lab06/blob/96e26a4dc8d97cbaabded33ff3bff5bb5611a008/.github/workflows/CI_release.yml
  
  Создание тэгов через терминал в прошлых лабораторных не встречалось, так что стоит привести пример команд:
  
